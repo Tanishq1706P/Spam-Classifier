@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spam Sorter · cluster console</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <h1>Spam Sorter</h1>
+  <ul class="nodes" id="nodes" aria-label="Cluster nodes"><li class="node unknown">Checking cluster…</li></ul>
+  <div class="model" id="model">No model loaded</div>
+</header>
+
+<section aria-label="Pipeline phase" class="phase-wrap">
+  <ol class="stepper" id="stepper"></ol>
+  <div id="banner" class="banner idle" role="status" aria-live="polite">Idle. Start a training run to begin.</div>
+</section>
+
+<nav class="tabs" role="tablist" aria-label="Sections">
+  <button role="tab" aria-selected="true" data-tab="dashboard">Dashboard</button>
+  <button role="tab" aria-selected="false" data-tab="train">Train</button>
+  <button role="tab" aria-selected="false" data-tab="predict">Predict</button>
+  <button role="tab" aria-selected="false" data-tab="stream">Live stream</button>
+  <button role="tab" aria-selected="false" data-tab="metrics">Metrics</button>
+  <button role="tab" aria-selected="false" data-tab="logs">Logs</button>
+</nav>
+
+<main>
+  <section id="tab-dashboard" class="panel">
+    <div class="stats">
+      <div><span id="s-total">–</span><label>Emails classified</label></div>
+      <div><span id="s-spam">–</span><label>Marked spam</label></div>
+      <div><span id="s-ham">–</span><label>Marked ham</label></div>
+      <div><span id="s-ratio">–</span><label>Spam share</label></div>
+    </div>
+    <canvas id="c-dist" width="640" height="220" aria-label="Spam probability distribution of recent emails"></canvas>
+    <p class="empty" id="dash-empty" hidden>Nothing classified yet. Try the Predict tab or send emails through Kafka.</p>
+  </section>
+
+  <section id="tab-train" class="panel" hidden>
+    <div class="form">
+      <label>Dataset path (HDFS)<input id="t-data" placeholder="/data/raw/sms.csv (default)"></label>
+      <label>Algorithm
+        <select id="t-algo"><option value="logreg">Logistic regression</option><option value="nb">Naive Bayes</option></select>
+      </label>
+      <label class="check"><input type="checkbox" id="t-tune"> Tune with 3-fold cross-validation (slower)</label>
+      <button id="t-go" class="primary">Start training</button>
+    </div>
+    <pre id="t-out" class="out" hidden></pre>
+  </section>
+
+  <section id="tab-predict" class="panel" hidden>
+    <div class="form">
+      <label>Paste an email<textarea id="p-text" rows="8" maxlength="20000"></textarea></label>
+      <div class="row">
+        <button id="p-go" class="primary">Classify</button>
+        <button id="p-send">Send to Kafka stream</button>
+      </div>
+    </div>
+    <div id="p-result" class="result" hidden></div>
+  </section>
+
+  <section id="tab-stream" class="panel" hidden>
+    <p class="hint">Rows appear as the streaming job writes them to HBase. Newest first, refreshed every 2 seconds.</p>
+    <div class="sc"><table id="s-table"><thead><tr><th>Label</th><th>Spam prob.</th><th>Email</th><th>Model</th></tr></thead><tbody></tbody></table></div>
+    <p class="empty" id="stream-empty" hidden>No predictions yet. Run <code>python -m src.ingestion.kafka_producer</code> to replay the sample data.</p>
+  </section>
+
+  <section id="tab-metrics" class="panel" hidden>
+    <p class="empty" id="m-empty">No evaluation yet. Train a model first.</p>
+    <div id="m-body" hidden>
+      <div class="stats" id="m-stats"></div>
+      <canvas id="c-cm" width="360" height="300" aria-label="Confusion matrix"></canvas>
+    </div>
+  </section>
+
+  <section id="tab-logs" class="panel" hidden>
+    <div class="row"><label>Filter by error code<input id="l-code" placeholder="SPM-TRN-501"></label><button id="l-refresh">Refresh</button></div>
+    <div class="sc"><table id="l-table"><thead><tr><th>Time</th><th>Phase</th><th>Status</th><th>Code</th><th>Message</th><th>Cause</th></tr></thead><tbody></tbody></table></div>
+  </section>
+</main>
+<script src="js/api.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Pinned versions (see docs/setup.md)
+java: 11
+hadoop: 3.3.6
+spark: 3.5.3
+kafka: 3.6.1
+hbase: 2.5.8
+nodes:
+  master:  {host: master,  ip: 192.168.56.10}
+  worker1: {host: worker1, ip: 192.168.56.11}
+  worker2: {host: worker2, ip: 192.168.56.12}
+hdfs_replication: 2

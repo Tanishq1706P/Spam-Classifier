@@ -1,0 +1,28 @@
+paths:
+  hdfs_raw: /data/raw
+  hdfs_clean: /data/clean
+  hdfs_models: /models
+  local_sample: data/sample/sms.csv
+spark:
+  master: yarn            # use local[*] for single-PC development
+  app_name: spam-classifier
+  executor_memory: 1g
+  num_features: 262144    # 2**18
+kafka:
+  bootstrap: master:9092
+  topic_in: emails-in
+  topic_out: results
+hbase:
+  host: master
+  thrift_port: 9090
+  tables: [predictions, model_runs, phase_log, datasets]
+ml:
+  default_algo: logreg    # logreg | nb
+  train_ratio: 0.8
+  cv_folds: 3
+  min_accuracy: 0.95
+api:
+  host: 0.0.0.0
+  port: 8000
+  max_text_len: 20000
+  api_key: ""             # optional; set via .env

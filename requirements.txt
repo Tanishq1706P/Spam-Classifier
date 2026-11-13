@@ -1,0 +1,8 @@
+pyspark==3.5.3
+fastapi
+uvicorn
+pyyaml
+happybase
+kafka-python
+pytest
+httpx
