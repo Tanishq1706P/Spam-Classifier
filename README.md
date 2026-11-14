@@ -1,244 +1,288 @@
  <div align="center">
 
-# Distributed Email Spam Classification
-### A Distributed Big Data & Real-Time Machine Learning System
+# DISTRIBUTED EMAIL SPAM CLASSIFICATION
 
-**Built with Apache Hadoop · Apache Spark MLlib · Apache Kafka · Apache HBase · FastAPI**
+### Distributed Big Data & Real-Time Machine Learning System
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
-![Hadoop](https://img.shields.io/badge/Apache-Hadoop-66CCFF?logo=apachehadoop&logoColor=black)
-![Spark](https://img.shields.io/badge/Apache-Spark-E25A1C?logo=apachespark&logoColor=white)
-![Kafka](https://img.shields.io/badge/Apache-Kafka-231F20?logo=apachekafka&logoColor=white)
-![HBase](https://img.shields.io/badge/Apache-HBase-D22128?logo=apache&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+**Intelligent Spam Detection Using the Apache Hadoop Ecosystem**
 
-**Big Data Laboratory Project · Academic Session 2026–2027**
+<br/>
 
-| **Institution** | National Institute of Technology Delhi |
-|---|---|
-| **Department** | Computer Science and Engineering |
-| **Class / Section** | CSE-2 |
-| **Subject** | Big Data |
-| **Faculty** | Dr. Himadri Singh |
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Hadoop](https://img.shields.io/badge/Hadoop-3.3.6-66CCFF?style=for-the-badge&logo=apachehadoop&logoColor=black)
+![Spark](https://img.shields.io/badge/Spark-3.5.3-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
+![Kafka](https://img.shields.io/badge/Kafka-3.6.1-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
+![HBase](https://img.shields.io/badge/HBase-2.5.8-D22128?style=for-the-badge&logo=apache&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+
+<br/>
+
+**BIG DATA LABORATORY PROJECT | 2026–2027**
+
+**National Institute of Technology Delhi**
+
+Department of Computer Science and Engineering
 
 </div>
 
 ---
 
-## Project Team
+## PROJECT INFORMATION
 
-**Team Name:** DataStream Innovators
+| Particulars | Details |
+|:---|:---|
+| Institution | National Institute of Technology Delhi |
+| Department | Computer Science and Engineering |
+| Class | CSE-2 |
+| Subject | Big Data |
+| Faculty | Dr. Himadri Singh |
+| Academic Session | 2026–2027 |
 
-| S. No. | Team Member | Roll Number |
+## PROJECT TEAM
+
+| S. No. | Name | Roll Number |
 |:---:|---|:---:|
-| 1 | **Sumit Kumar** | `231210105` |
-| 2 | **Tushar Verma** | `231210117` |
-| 3 | **Tanishq Pruthi** | `231210113` |
-| 4 | **Tashik Midhha** | `231210115` |
-
-**Submitted to:** Dr. Himadri Singh  
-**Department:** Computer Science and Engineering  
-**Institution:** National Institute of Technology Delhi
+| 01 | **Sumit Kumar** | 231210105 |
+| 02 | **Tushar Verma** | 231210117 |
+| 03 | **Tanishq Pruthi** | 231210113 |
+| 04 | **Tashik Midhha** | 231210115 |
 
 ---
 
-# Read This Project Like a Report
+# COMPLETE PROJECT REPORT
 
-This README is organised as a complete project report. Use the contents below to navigate through the chapters or read from beginning to end to understand the complete project journey—from the problem statement and theoretical foundations to architecture, implementation, deployment, evaluation, and future scope.
+<div align="center">
+
+### Explore the complete technical documentation
+
+A detailed academic report covering the architecture, implementation, distributed processing, machine learning algorithms, experiments, and results.
+
+<br/>
+
+[![Download Project Report](https://img.shields.io/badge/DOWNLOAD_COMPLETE_PROJECT_REPORT-PDF-blue?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](docs/Spam_Classifier_Big_Data_Report.pdf)
+
+<br/>
+
+| DOCUMENT | DETAILS |
+|:---|:---|
+| Format | PDF |
+| Pages | 34 |
+| Subject | Big Data |
+| Institution | NIT Delhi |
+| Academic Year | 2026–2027 |
+
+**Inside the report**
+
+- System architecture and distributed cluster design
+- Hadoop, Spark, Kafka and HBase implementation
+- Machine learning algorithms and mathematical foundations
+- Installation and execution procedures
+- Application screenshots and deployment
+- Model evaluation and performance analysis
+- Testing, limitations and future improvements
+
+</div>
+
+---
+
+# TABLE OF CONTENTS
 
 <details open>
-<summary><strong>Table of Contents — Project Chapters</strong></summary>
+<summary><strong>Explore all 21 chapters</strong></summary>
 
-1. [Abstract](#1-abstract)
-2. [Introduction](#2-introduction)
-3. [Problem Statement](#3-problem-statement)
-4. [Objectives and Scope](#4-objectives-and-scope)
-5. [Requirements and Dataset](#5-requirements-and-dataset)
-6. [Theoretical Background](#6-theoretical-background)
-7. [System Architecture](#7-system-architecture)
-8. [Methodology and Working](#8-methodology-and-working)
-9. [Machine Learning Algorithms](#9-machine-learning-algorithms)
-10. [Implementation Details](#10-implementation-details)
-11. [Project Directory Structure](#11-project-directory-structure)
-12. [Installation and Cluster Setup](#12-installation-and-cluster-setup)
-13. [Execution Guide](#13-execution-guide)
-14. [Application Features and Monitoring](#14-application-features-and-monitoring)
-15. [API Reference](#15-api-reference)
-16. [Results and Performance Analysis](#16-results-and-performance-analysis)
-17. [Testing and Verification](#17-testing-and-verification)
-18. [Limitations and Challenges](#18-limitations-and-challenges)
-19. [Applications and Future Scope](#19-applications-and-future-scope)
-20. [Conclusion](#20-conclusion)
-21. [References](#21-references)
+| Chapter | Section |
+|:---:|---|
+| 01 | [Abstract](#1-abstract) |
+| 02 | [Introduction](#2-introduction) |
+| 03 | [Problem Statement](#3-problem-statement) |
+| 04 | [Objectives and Scope](#4-objectives-and-scope) |
+| 05 | [Requirements and Dataset](#5-requirements-and-dataset) |
+| 06 | [Theoretical Background](#6-theoretical-background) |
+| 07 | [System Architecture](#7-system-architecture) |
+| 08 | [Methodology and Working](#8-methodology-and-working) |
+| 09 | [Machine Learning Algorithms](#9-machine-learning-algorithms) |
+| 10 | [Implementation Details](#10-implementation-details) |
+| 11 | [Project Structure](#11-project-directory-structure) |
+| 12 | [Installation and Cluster Setup](#12-installation-and-cluster-setup) |
+| 13 | [Execution Guide](#13-execution-guide) |
+| 14 | [Application Features](#14-application-features-and-monitoring) |
+| 15 | [API Reference](#15-api-reference) |
+| 16 | [Results and Performance](#16-results-and-performance-analysis) |
+| 17 | [Testing and Verification](#17-testing-and-verification) |
+| 18 | [Limitations and Challenges](#18-limitations-and-challenges) |
+| 19 | [Applications and Future Scope](#19-applications-and-future-scope) |
+| 20 | [Conclusion](#20-conclusion) |
+| 21 | [References](#21-references) |
 
 </details>
 
 ---
 
-# 1. Abstract
+# 01. ABSTRACT
 
-The rapid growth of digital communication has increased the volume of emails and text messages generated every day. Among these messages, spam can cause unnecessary storage consumption, reduce productivity, and expose users to phishing attempts, fraudulent offers, and misleading information. Automated spam detection is therefore an important application of machine learning and data analytics.
+The rapid growth of digital communication has significantly increased the volume of messages generated every day. Among these messages, spam can reduce productivity, consume storage, and expose users to phishing attempts and fraudulent information.
 
-This project presents a **Distributed Email Spam Classification System using Apache Spark MLlib**, integrated with the Hadoop ecosystem. It classifies textual messages into two categories: **Spam** and **Ham**. Hadoop Distributed File System (HDFS) provides distributed storage, Apache Spark MLlib performs feature extraction and model training, Apache Kafka handles incoming messages, Spark Structured Streaming performs continuous classification, and Apache HBase stores predictions and execution information.
+This project presents a **Distributed Email Spam Classification System** built using Apache Spark MLlib and the Hadoop ecosystem. The system classifies messages into two categories: **Spam** and **Ham**.
 
-A FastAPI backend connects the processing components to a web-based monitoring dashboard. The application supports model training, individual message prediction, real-time message ingestion, live prediction monitoring, metric inspection, and structured error reporting.
+The architecture integrates several Big Data technologies:
 
-The system is designed around a three-node topology consisting of one master and two worker nodes. Experiments using the UCI SMS Spam Collection dataset and an 80:20 train-test split produced **97.6% accuracy** with Logistic Regression and **96.4% accuracy** with Naive Bayes. Logistic Regression achieved a spam precision of 98.2%, recall of 82.6%, F1-score of 0.897, and false-positive rate of 0.22%.
+- **Hadoop HDFS** for distributed data storage.
+- **Apache Spark MLlib** for machine learning and model training.
+- **Apache Kafka** for real-time message ingestion.
+- **Spark Structured Streaming** for continuous classification.
+- **Apache HBase** for storing predictions and execution information.
+- **FastAPI** for backend services and API integration.
 
-The project demonstrates how distributed storage, machine learning, message ingestion, stream processing, and NoSQL persistence can be integrated into a single application.
+The application follows a three-node architecture consisting of one master and two worker nodes. It uses the UCI SMS Spam Collection dataset containing 5,574 labelled messages.
 
-**Keywords:** Big Data, Hadoop, HDFS, Apache Spark, Spark MLlib, Apache Kafka, Structured Streaming, HBase, Logistic Regression, Naive Bayes, Spam Classification.
+Two classification algorithms, Logistic Regression and Naive Bayes, are implemented and evaluated. Logistic Regression achieved **97.6% accuracy**, while Naive Bayes achieved **96.4% accuracy** on the reported test split.
+
+The project demonstrates the integration of distributed storage, parallel processing, machine learning, real-time data ingestion, and NoSQL persistence into a unified application.
+
+**Keywords:** Big Data, Distributed Computing, Hadoop, Spark, Kafka, HBase, Machine Learning, Spam Classification.
 
 ---
 
-# 2. Introduction
+# 02. INTRODUCTION
 
-## 2.1 Introduction to Big Data
+## 2.1 Big Data
 
-Big Data refers to extremely large and complex datasets that cannot be efficiently processed using traditional data-processing systems alone. With the growth of internet services, social media, banking systems, and digital communication, the amount of generated data has increased significantly.
+Big Data refers to large and complex datasets that cannot be efficiently processed using traditional data-processing systems alone.
 
-The commonly discussed characteristics of Big Data are the **5 Vs**:
+Its major characteristics are represented by the 5 Vs:
 
-| Characteristic | Meaning |
+| Characteristic | Description |
 |---|---|
-| **Volume** | The enormous amount of data generated and stored. |
-| **Velocity** | The speed at which data is generated and processed. |
-| **Variety** | Different forms of data, including structured, semi-structured, and unstructured data. |
-| **Veracity** | The quality, reliability, and accuracy of data. |
-| **Value** | Useful information that can be extracted from data. |
+| Volume | Amount of data generated and stored |
+| Velocity | Speed of data generation and processing |
+| Variety | Different formats of data |
+| Veracity | Reliability and quality of data |
+| Value | Useful information extracted from data |
 
-Distributed frameworks such as Hadoop and Spark help store, process, and analyse large datasets across multiple machines.
+Distributed frameworks such as Hadoop and Spark enable large datasets to be stored and processed across multiple machines.
 
-## 2.2 Email Spam Classification
+## 2.2 Spam Classification
 
-Spam classification is a machine-learning task that automatically identifies unwanted or suspicious messages by analysing their textual content.
+Spam classification is a supervised machine-learning task that identifies unwanted messages based on their textual content.
 
 The system uses two classes:
 
-- **Spam:** Unwanted or suspicious messages, such as promotional or fraudulent messages.
+- **Spam:** Unwanted or suspicious messages.
 - **Ham:** Legitimate messages.
 
-Traditional single-machine approaches can face resource and scalability limitations as data volume increases. Distributed processing allows data and computation to be handled across multiple machines.
+The objective is to automate classification while maintaining high precision and reliable detection.
 
 ## 2.3 Motivation
 
-The project was undertaken to understand how Big Data technologies work together in a practical classification application. The main motivations were:
+The project explores how different Big Data technologies work together in a practical machine-learning application.
 
-- Understanding distributed data storage using HDFS.
-- Learning parallel data processing with Apache Spark.
-- Implementing machine learning using Spark MLlib.
-- Exploring real-time message ingestion using Kafka.
-- Processing continuous data streams using Spark Structured Streaming.
-- Storing predictions using HBase.
-- Building a monitoring interface for a distributed application.
+The primary motivations include:
+
+- Distributed storage using HDFS.
+- Parallel computation using Apache Spark.
+- Text classification using Spark MLlib.
+- Real-time message ingestion using Kafka.
+- Continuous processing using Structured Streaming.
+- Distributed persistence using HBase.
+- Application monitoring through a web dashboard.
 
 ## 2.4 Proposed Solution
 
-The proposed system contains two connected processing pipelines:
+The system consists of two connected pipelines:
 
-1. **Batch training pipeline:** Loads a labelled dataset, cleans the text, extracts numerical features, trains classification models, evaluates them, and stores the trained model.
-2. **Real-time classification pipeline:** Receives messages through Kafka, processes them using Spark Structured Streaming, predicts Spam or Ham using the trained model, and stores the results in HBase and Kafka.
+**Batch Training Pipeline**
 
-A FastAPI backend connects these services with the web dashboard.
+Loads labelled data, performs text preprocessing, extracts numerical features, trains classification models, evaluates their performance, and saves the trained model.
+
+**Real-Time Classification Pipeline**
+
+Receives incoming messages through Kafka, processes them using Spark Structured Streaming, predicts Spam or Ham, and stores the results in HBase and Kafka.
+
+FastAPI connects these services to the web dashboard.
 
 ---
 
-# 3. Problem Statement
+# 03. PROBLEM STATEMENT
 
-The increasing volume of electronic communication creates a need for automated systems that can identify spam messages accurately and efficiently. Processing a large number of messages with a traditional single-machine application may become computationally expensive and difficult to scale.
+Traditional spam detection applications may encounter processing, storage, and scalability limitations when handling large volumes of messages.
 
-The project addresses the problem of designing a distributed machine-learning application that can:
+The objective is to develop a distributed classification system capable of:
 
-1. Process textual datasets.
-2. Train classification models.
-3. Identify spam and legitimate messages.
-4. Support continuous ingestion of incoming messages.
-5. Store classification results efficiently.
-6. Provide monitoring and execution information.
-7. Support distributed execution across multiple machines.
+1. Processing textual datasets.
+2. Training machine-learning models.
+3. Identifying spam and legitimate messages.
+4. Supporting continuous message ingestion.
+5. Storing classification results efficiently.
+6. Monitoring pipeline execution.
+7. Supporting distributed execution across multiple machines.
 
-## 3.1 Existing System and Its Challenges
+## Existing System vs Proposed System
 
-Traditional spam detection systems often execute models on individual machines. Although they can achieve good classification results, they may face:
-
-- Limited processing resources.
-- Difficulty handling continuous data streams.
-- Storage limitations.
-- Limited scalability.
-- Limited visibility into distributed execution.
-
-## 3.2 Proposed System
-
-The proposed system integrates multiple Big Data technologies:
-
-| Requirement | Proposed Component |
+| Existing Approach | Proposed Approach |
 |---|---|
-| Distributed data storage | Hadoop HDFS |
-| Parallel processing | Apache Spark |
-| Model training and prediction | Spark MLlib |
-| Real-time message ingestion | Apache Kafka |
-| Stream processing | Spark Structured Streaming |
-| Prediction storage | Apache HBase |
-| Backend integration | FastAPI |
-| Monitoring | Web dashboard |
+| Single-machine processing | Distributed processing |
+| Limited scalability | Hadoop and Spark ecosystem |
+| Basic message ingestion | Kafka-based ingestion |
+| Limited real-time processing | Structured Streaming |
+| Conventional storage | HDFS and HBase |
+| Limited monitoring | FastAPI dashboard |
 
 ---
 
-# 4. Objectives and Scope
+# 04. OBJECTIVES AND SCOPE
 
 ## 4.1 Objectives
 
-The primary objective is to develop a distributed Spam/Ham classification system using Big Data technologies.
+The main objectives are:
 
-Specific objectives:
+- Understand distributed computing and the Hadoop ecosystem.
+- Configure HDFS for dataset storage.
+- Perform distributed processing using Apache Spark.
+- Implement Logistic Regression and Naive Bayes using MLlib.
+- Perform text preprocessing and TF-IDF feature extraction.
+- Integrate Kafka for real-time message ingestion.
+- Implement Spark Structured Streaming.
+- Store predictions using HBase.
+- Develop REST APIs using FastAPI.
+- Build a web-based monitoring dashboard.
+- Implement structured error handling and phase tracking.
 
-1. Understand the Hadoop ecosystem and distributed computing.
-2. Configure HDFS for storing datasets.
-3. Perform distributed data processing using Apache Spark.
-4. Implement machine-learning algorithms using Spark MLlib.
-5. Perform text preprocessing and feature extraction.
-6. Train and evaluate Logistic Regression and Naive Bayes models.
-7. Integrate Kafka for real-time message ingestion.
-8. Implement stream processing using Spark Structured Streaming.
-9. Store predictions in Apache HBase.
-10. Develop a FastAPI-based backend.
-11. Develop a web-based monitoring dashboard.
-12. Implement structured error handling and pipeline phase tracking.
+## 4.2 Project Scope
 
-## 4.2 Scope
+| Area | Implementation |
+|---|---|
+| Data Processing | Text preprocessing and cleaning |
+| Distributed Storage | Hadoop HDFS |
+| Machine Learning | Spark MLlib |
+| Message Ingestion | Apache Kafka |
+| Stream Processing | Structured Streaming |
+| Database | Apache HBase |
+| Backend | FastAPI |
+| Frontend | HTML, CSS, JavaScript |
+| Monitoring | Dashboard and execution logs |
 
-The project covers:
-
-- **Data processing:** Reading and preparing textual datasets.
-- **Distributed storage:** Using HDFS for input datasets and model files.
-- **Machine learning:** Training and evaluating classifiers using Spark MLlib.
-- **Real-time processing:** Using Kafka and Spark Structured Streaming.
-- **Distributed database:** Using HBase for predictions and pipeline execution information.
-- **Monitoring:** Observing application status, model metrics, and execution phases through a web interface.
-
-The architecture is designed around one master node and two worker nodes. Performance benchmarking across different cluster sizes is considered future work.
+The architecture is designed around one master node and two worker nodes. Multi-cluster performance benchmarking is considered future work.
 
 ---
 
-# 5. Requirements and Dataset
+# 05. REQUIREMENTS AND DATASET
 
 ## 5.1 Software Requirements
 
-| Software / Technology | Version / Configuration | Purpose |
+| Technology | Version | Purpose |
 |---|---|---|
 | Python | 3.10+ | Application development |
 | Java | 11 | Runtime environment |
-| Apache Hadoop | 3.3.6 | Distributed computing ecosystem |
+| Hadoop | 3.3.6 | Distributed ecosystem |
 | HDFS | Hadoop component | Distributed storage |
 | YARN | Hadoop component | Resource management |
-| Apache Spark / PySpark | 3.5.3 | Distributed processing |
+| Apache Spark | 3.5.3 | Distributed processing |
 | Spark MLlib | Spark component | Machine learning |
-| Apache Kafka | 3.6.1, KRaft mode | Real-time message ingestion |
-| Spark Structured Streaming | Spark component | Stream processing |
-| Apache HBase | 2.5.8 | Distributed NoSQL database |
-| ZooKeeper | HBase-managed | HBase coordination |
-| FastAPI + Uvicorn | — | Backend and API server |
-| HTML, CSS, JavaScript | — | Frontend dashboard |
+| Apache Kafka | 3.6.1 | Message ingestion |
+| HBase | 2.5.8 | NoSQL database |
+| ZooKeeper | HBase-managed | Coordination |
+| FastAPI | — | Backend API |
+| HTML/CSS/JavaScript | — | Frontend |
 
 ## 5.2 Hardware and Network Requirements
 
@@ -247,158 +291,190 @@ The architecture is designed around one master node and two worker nodes. Perfor
 | Processor | Multi-core processor |
 | RAM | 8 GB or higher recommended per machine |
 | Storage | 20 GB or more free space |
-| Network | LAN / host-only connectivity between nodes |
 | Operating System | Ubuntu Linux 22.04 |
-| HDFS replication | 2 |
-
-The deployment topology uses three machines connected through a private network. Configure the actual IP addresses for the environment in use rather than copying example addresses without verification.
+| Network | LAN / host-only connectivity |
+| HDFS Replication | 2 |
 
 ## 5.3 Dataset
 
-The project uses the **UCI SMS Spam Collection** dataset.
+**Dataset:** UCI SMS Spam Collection
 
-- Total labelled messages: **5,574**
-- Each record contains a class label (`spam` or `ham`) and message text.
-- Approximately **13%** of the messages belong to the spam class.
-- The dataset is imbalanced and contains short SMS messages rather than long-form email content.
+<details>
+<summary><strong>Dataset overview</strong></summary>
 
-The dataset is used to train and evaluate the classification models. This distinction is important when interpreting how well the results may generalise to larger email datasets.
+| Property | Details |
+|---|---|
+| Total Messages | 5,574 |
+| Classes | Spam and Ham |
+| Data Type | Text |
+| Spam Distribution | Approximately 13% |
+| Training Split | 80% |
+| Testing Split | 20% |
+
+Each record contains a message label and its corresponding text.
+
+The dataset is imbalanced and contains short SMS messages rather than long-form email content. This distinction is important when interpreting the model's generalisation to larger email datasets.
+
+</details>
 
 ---
 
-# 6. Theoretical Background
+# 06. THEORETICAL BACKGROUND
 
 ## 6.1 Apache Hadoop
 
-Apache Hadoop is an open-source framework for distributed storage and processing of large datasets. Its major components include Hadoop Common, HDFS, YARN, and MapReduce.
-
-### Hadoop Distributed File System (HDFS)
-
-HDFS divides large files into blocks and distributes those blocks across DataNodes.
-
-- **NameNode:** Maintains filesystem metadata, directory structure, and block locations.
-- **DataNode:** Stores the actual data blocks and handles read/write operations.
-
-### Yet Another Resource Negotiator (YARN)
-
-YARN manages cluster resources and schedules applications.
+Apache Hadoop is an open-source framework for distributed storage and processing.
 
 Its major components include:
 
+- **HDFS:** Distributed file storage.
+- **YARN:** Cluster resource management.
+- **MapReduce:** Distributed batch computation.
+- **Hadoop Common:** Shared libraries and utilities.
+
+### HDFS Architecture
+
+| Component | Responsibility |
+|---|---|
+| NameNode | Maintains filesystem metadata and block locations |
+| DataNode | Stores actual data blocks |
+
+HDFS divides large files into blocks and distributes them across DataNodes.
+
+### YARN
+
+YARN manages cluster resources and schedules applications through:
+
 - ResourceManager
 - NodeManagers
-- ApplicationMaster for each application
+- ApplicationMaster
 
-In this project, YARN manages resources for Spark jobs.
+In this project, YARN manages Spark application resources.
 
 ## 6.2 Apache Spark
 
-Apache Spark is a distributed data-processing framework designed for fast and scalable computation. It supports batch processing, stream processing, machine learning, SQL processing, and graph analytics.
+Apache Spark is a distributed processing framework supporting:
 
-A Spark driver coordinates execution, while executors perform distributed tasks. Spark can cache intermediate data in memory, which can improve performance for suitable workloads.
+- Batch processing
+- Stream processing
+- Machine learning
+- SQL analytics
+- Graph processing
+
+The Spark driver coordinates execution, while executors perform distributed tasks.
 
 ## 6.3 Spark MLlib
 
-Spark MLlib is Apache Spark's machine-learning library. It provides algorithms and pipeline abstractions for chaining feature transformers and estimators.
+Spark MLlib provides machine-learning algorithms and pipeline abstractions.
 
-In this project, MLlib is used for:
+It is used for:
 
-- Text feature extraction.
+- Feature extraction.
 - Model training.
-- Spam/Ham classification.
+- Classification.
 - Model evaluation.
-
-The implemented algorithms are Logistic Regression and Naive Bayes.
 
 ## 6.4 Apache Kafka
 
-Apache Kafka is a distributed event-streaming platform used to collect, store, and distribute messages.
+Kafka is a distributed event-streaming platform.
 
-Important concepts:
-
-- **Producer:** Publishes messages to Kafka topics.
-- **Consumer:** Reads messages from Kafka topics.
-- **Topic:** A logical category in which messages are stored.
-- **Partition:** Divides a topic into ordered message streams.
-- **Broker:** A Kafka server that stores and serves messages.
+| Concept | Description |
+|---|---|
+| Producer | Publishes messages |
+| Consumer | Reads messages |
+| Topic | Logical message category |
+| Partition | Divides a topic into ordered streams |
+| Broker | Stores and serves messages |
 
 The project uses two topics:
 
 | Topic | Purpose |
 |---|---|
-| `emails-in` | Receives incoming messages |
-| `results` | Carries classification results |
-
-Kafka decouples message ingestion from downstream processing.
+| `emails-in` | Incoming messages |
+| `results` | Classification results |
 
 ## 6.5 Spark Structured Streaming
 
-Spark Structured Streaming is a stream-processing engine built on Spark SQL. It processes incoming data using a DataFrame-based programming model and micro-batches.
+Structured Streaming provides a DataFrame-based interface for processing continuous data streams.
 
-In this project, it consumes messages from Kafka, applies the cleaning and feature pipeline, classifies messages, and sends predictions to storage.
+The project consumes Kafka messages in micro-batches, applies the classification pipeline, and forwards predictions to storage.
 
 ## 6.6 Apache HBase
 
-Apache HBase is a distributed, column-family-oriented NoSQL database built on HDFS. It stores prediction records and execution information.
+HBase is a distributed, column-family-oriented NoSQL database built on HDFS.
 
-The project defines four HBase tables:
+The project defines four tables:
 
 | Table | Purpose |
 |---|---|
-| `predictions` | Classification predictions; row key uses reverse timestamp and email ID |
+| `predictions` | Classification records |
 | `model_runs` | Model execution information |
-| `phase_log` | Pipeline phase information |
+| `phase_log` | Pipeline execution logs |
 | `datasets` | Dataset-related information |
 
-The backend accesses HBase through the Thrift gateway.
+The backend communicates with HBase through the Thrift gateway.
 
 ## 6.7 FastAPI
 
-FastAPI is a Python web framework used to build REST APIs. It provides request validation and automatic API documentation.
+FastAPI provides REST endpoints for:
 
-In this project, it acts as the communication layer between the dashboard and backend services under the `/api/v1` prefix.
+- Training.
+- Prediction.
+- Status monitoring.
+- Metrics.
+- Logs.
+- Error information.
+
+The API uses the `/api/v1` prefix.
 
 ## 6.8 ZooKeeper and Kafka KRaft
 
-ZooKeeper is used for coordination by HBase in this configuration. Kafka is configured separately in **KRaft mode**, so the Kafka broker does not depend on ZooKeeper.
+ZooKeeper is used for HBase coordination in this configuration.
+
+Kafka operates separately in KRaft mode and does not depend on ZooKeeper.
 
 ---
 
-# 7. System Architecture
+# 07. SYSTEM ARCHITECTURE
 
-The application follows a distributed architecture that combines batch machine learning and real-time stream processing.
+The application combines batch machine learning and real-time classification into a distributed architecture.
 
 ## 7.1 High-Level Architecture
 
 ```mermaid
 flowchart TD
-    A["Web Dashboard<br/>HTML / CSS / JavaScript"] --> B["FastAPI Backend<br/>REST APIs"]
+    A["Web Dashboard"] --> B["FastAPI Backend"]
 
     B --> C["Apache Spark on YARN"]
-    C --> D["HDFS<br/>Datasets and Models"]
+    C --> D["HDFS"]
 
-    B --> E["Apache Kafka<br/>emails-in topic"]
-    E --> F["Spark Structured Streaming"]
+    D --> E["Dataset Processing"]
+    E --> F["Spark MLlib"]
+    F --> G["Trained Model"]
 
-    D --> G["Training Dataset"]
-    G --> H["Spark MLlib"]
-    H --> I["Trained Classification Model"]
+    B --> H["Kafka Producer"]
+    H --> I["emails-in Topic"]
 
-    I --> F
-    F --> J{"Spam / Ham Prediction"}
+    I --> J["Spark Structured Streaming"]
+    G --> J
 
-    J --> K["Apache HBase<br/>Predictions"]
-    J --> L["Kafka<br/>results topic"]
+    J --> K{"Classification"}
 
-    K --> B
-    L --> B
+    K --> L["Spam"]
+    K --> M["Ham"]
+
+    L --> N["HBase"]
+    M --> N
+
+    N --> B
+    J --> O["Kafka Results Topic"]
 ```
 
-**Architecture explanation:** The dashboard communicates with FastAPI, which exposes training, prediction, and monitoring operations. Spark performs machine learning using data stored in HDFS. Kafka receives incoming messages, Spark Structured Streaming classifies them, and the results are written to HBase and the Kafka results topic.
+**Data Flow:** The dashboard communicates with FastAPI. Spark handles distributed model training, while Kafka receives incoming messages. Structured Streaming performs classification using the trained model. Predictions are stored in HBase and published to Kafka.
 
-## 7.2 Three-Node Distributed Cluster
+## 7.2 Three-Node Cluster Architecture
 
-The system is designed around one master and two worker nodes.
+The distributed environment consists of one master and two worker nodes.
 
 ```mermaid
 flowchart TB
@@ -409,7 +485,7 @@ flowchart TB
     M --> HM["HBase HMaster + Thrift"]
     M --> ZK["ZooKeeper"]
     M --> KB["Kafka Broker (KRaft)"]
-    M --> API["FastAPI Server"]
+    M --> API["FastAPI"]
 
     M -.-> W1["WORKER 1"]
     M -.-> W2["WORKER 2"]
@@ -427,115 +503,112 @@ flowchart TB
 
 | Node | Services |
 |---|---|
-| **Master** | NameNode, ResourceManager, HMaster, ZooKeeper, Kafka broker, HBase Thrift, FastAPI |
-| **Worker 1** | DataNode, NodeManager, HBase RegionServer, Spark executor |
-| **Worker 2** | DataNode, NodeManager, HBase RegionServer, Spark executor |
+| Master | NameNode, ResourceManager, HMaster, ZooKeeper, Kafka, Thrift, FastAPI |
+| Worker 1 | DataNode, NodeManager, RegionServer, Spark Executor |
+| Worker 2 | DataNode, NodeManager, RegionServer, Spark Executor |
 
-The master coordinates the cluster. Worker nodes provide distributed storage and processing resources.
-
-## 7.3 Batch Training and Real-Time Classification
+## 7.3 Batch and Streaming Architecture
 
 ```mermaid
 flowchart LR
-    subgraph BATCH["BATCH TRAINING"]
-        A["UCI SMS Dataset"] --> B["HDFS"]
-        B --> C["Spark DataFrame"]
+    subgraph B["BATCH TRAINING"]
+        A["UCI Dataset"] --> C["HDFS"]
         C --> D["Text Cleaning"]
-        D --> E["Tokenizer + Stop Words"]
-        E --> F["HashingTF + IDF"]
-        F --> G["Spark MLlib"]
-        G --> H["Model Evaluation"]
-        H --> I["Model Registry"]
+        D --> E["Feature Extraction"]
+        E --> F["Spark MLlib"]
+        F --> G["Model Evaluation"]
+        G --> H["Model Registry"]
     end
 
-    subgraph STREAM["REAL-TIME CLASSIFICATION"]
-        J["Incoming Message"] --> K["Kafka Producer"]
-        K --> L["emails-in"]
-        L --> M["Structured Streaming"]
-        M --> N["Text Cleaning"]
-        N --> O["Trained Pipeline Model"]
-        O --> P["Spam / Ham Prediction"]
-        P --> Q["HBase"]
-        P --> R["Kafka results"]
+    subgraph S["REAL-TIME STREAMING"]
+        I["Incoming Messages"] --> J["Kafka"]
+        J --> K["Structured Streaming"]
+        K --> L["Text Cleaning"]
+        L --> M["Trained Model"]
+        M --> N["Prediction"]
+        N --> O["HBase"]
+        N --> P["Kafka Results"]
     end
 
-    I -. "Latest trained model" .-> O
+    H -.-> M
 ```
 
-The batch and streaming paths share the same text-cleaning logic and trained pipeline model to keep preprocessing consistent.
+The training and streaming pipelines share the same preprocessing logic and trained pipeline model.
 
 ---
 
-# 8. Methodology and Working
+# 08. METHODOLOGY AND WORKING
 
-The application follows seven sequential execution phases, labelled P1 to P7. The dashboard displays the progress of these phases.
+The application follows seven execution phases, labelled P1 to P7.
 
 | Phase | Name | Responsibility |
-|---|---|---|
+|:---:|---|---|
 | P1 | `INGEST` | Dataset ingestion |
-| P2 | `CLEAN` | Text cleaning and preprocessing |
+| P2 | `CLEAN` | Text preprocessing |
 | P3 | `FEATURES` | Feature extraction |
 | P4 | `TRAIN` | Model training |
-| P5 | `EVALUATE` | Model evaluation |
+| P5 | `EVALUATE` | Performance evaluation |
 | P6 | `SAVE_MODEL` | Model persistence |
 | P7 | `STREAM` | Real-time classification |
 
-## 8.1 P1 — Data Ingestion
+## 8.1 Data Ingestion
 
-The first phase reads the input CSV containing label and text columns and prepares the records for processing. The dataset is stored in HDFS, with the default path configured as `/data/raw/sms.csv`.
+The input CSV is read, validated, and prepared for processing.
 
-## 8.2 P2 — Data Cleaning and Preprocessing
+Default HDFS location:
 
-The same cleaning function is shared by training and streaming so both pipelines process text consistently.
+```text
+/data/raw/sms.csv
+```
 
-The cleaning operations include:
+## 8.2 Text Preprocessing
 
-- Dropping rows with a missing label or message text.
-- Removing duplicate messages.
+The same cleaning function is used during training and streaming.
+
+Operations include:
+
+- Removing missing and duplicate records.
 - Converting text to lowercase.
 - Removing HTML tags.
-- Replacing URLs with a placeholder token.
+- Replacing URLs with a placeholder.
 - Removing digits and punctuation.
-- Collapsing extra whitespace.
-- Removing messages that become empty.
-- Mapping labels to `1.0` for spam and `0.0` for ham.
+- Normalising whitespace.
+- Removing empty messages.
+- Mapping spam to `1.0` and ham to `0.0`.
 
-## 8.3 P3 — Feature Extraction
+## 8.3 Feature Extraction
 
-Machine-learning algorithms require numerical input. The project uses a Spark ML pipeline:
+The project uses a Spark ML pipeline consisting of:
 
-1. **Tokenizer:** Splits each message into words.
-2. **StopWordsRemover:** Removes frequent words that carry limited classification information.
-3. **HashingTF:** Maps terms to a fixed-size term-frequency vector of 262,144 (`2^18`) features.
-4. **IDF:** Rescales term frequencies according to how rare each term is across the collection.
+1. **Tokenizer:** Converts messages into tokens.
+2. **StopWordsRemover:** Removes common words.
+3. **HashingTF:** Generates a vector containing 262,144 (`2^18`) features.
+4. **IDF:** Applies inverse document frequency weighting.
 
-The TF-IDF weight is:
+The TF-IDF formula is:
 
 \[
-\operatorname{TF\text{-}IDF}(t,d)=\operatorname{TF}(t,d)\times\operatorname{IDF}(t)
+TFIDF(t,d)=TF(t,d)\times IDF(t)
 \]
 
-Here, \(t\) is a term and \(d\) is a document. Terms that occur frequently in one message but are relatively rare across the collection receive higher weights.
+This transformation converts textual data into numerical features suitable for machine learning.
 
-## 8.4 P4 — Model Training
+## 8.4 Model Training
 
-The prepared dataset is divided into training and test subsets using an **80:20 random split with a fixed seed**.
-
-- Logistic Regression is the primary model.
-- Naive Bayes is available as an alternative.
-- Class weights are applied to Logistic Regression to account for the approximately 13% spam class.
-- An optional three-fold cross-validation can be enabled from the Train tab.
-
-Configured model parameters:
+The dataset is divided using an 80:20 random train-test split with a fixed seed.
 
 | Model | Configuration |
 |---|---|
 | Logistic Regression | 50 iterations; regularisation 0.01 |
 | Naive Bayes | Smoothing 1.0 |
 
-## 8.5 P5 — Model Evaluation
+Class weights are applied to Logistic Regression to address class imbalance.
 
-The model is evaluated on the test subset using:
+Optional three-fold cross-validation is available through the Train tab.
+
+## 8.5 Model Evaluation
+
+The following metrics are calculated:
 
 - Accuracy
 - Precision
@@ -545,133 +618,127 @@ The model is evaluated on the test subset using:
 - False-positive rate
 - Confusion matrix
 
-A minimum accuracy threshold of 95% is configured. A run below the threshold raises a coded error.
+The configured minimum accuracy threshold is 95%.
 
-## 8.6 P6 — Model Storage
+## 8.6 Model Storage
 
-The trained pipeline model and its metadata are saved through the model registry. The registry assigns incrementing model versions. The latest version is loaded by the prediction API and streaming job.
+The trained pipeline and metadata are saved through the model registry.
 
-## 8.7 P7 — Real-Time Streaming
+Incrementing model versions are maintained, and the latest model is used by the prediction API and streaming job.
 
-1. Incoming messages are published to Kafka topic `emails-in`.
+## 8.7 Real-Time Classification
+
+1. Messages are published to Kafka topic `emails-in`.
 2. Spark Structured Streaming consumes messages in micro-batches.
-3. Messages are cleaned and classified using the latest trained model.
-4. Predictions are written to HBase and Kafka topic `results`.
-5. The phase tracker records status, duration, and error code.
+3. The preprocessing pipeline cleans the messages.
+4. The trained model predicts Spam or Ham.
+5. Results are stored in HBase and Kafka topic `results`.
+6. Execution information is recorded in the phase tracker.
 
 ---
 
-# 9. Machine Learning Algorithms
+# 09. MACHINE LEARNING ALGORITHMS
 
 ## 9.1 Logistic Regression
 
-Logistic Regression is a supervised learning algorithm used for binary classification. It estimates the probability that a message belongs to the spam class.
+Logistic Regression is a supervised learning algorithm used for binary classification.
+
+It estimates the probability that a message belongs to the spam class.
 
 \[
 P(y=1\mid x)=\frac{1}{1+e^{-z}}
-\qquad
+\]
+
+\[
 z=w^Tx+b
 \]
 
 Where:
 
-- \(x\) is the input feature vector.
-- \(w\) is the learned weight vector.
-- \(b\) is the bias.
-- \(P(y=1\mid x)\) is the estimated probability of spam.
+- \(x\): Input feature vector.
+- \(w\): Learned weights.
+- \(b\): Bias.
+- \(P(y=1\mid x)\): Probability of spam.
 
-A probability threshold is used to assign the predicted class.
-
-**Why it is used:** It works with sparse text features, produces probability-based outputs, and achieved stronger results than Naive Bayes in the reported experiment.
+**Reason for selection:** It works with sparse text features, provides probability-based predictions, and achieved the best reported classification results.
 
 ## 9.2 Naive Bayes
 
-Naive Bayes is a probabilistic classifier based on Bayes' theorem:
+Naive Bayes is a probabilistic classifier based on Bayes' theorem.
 
 \[
-P(C\mid X)=\frac{P(X\mid C)\cdot P(C)}{P(X)}
+P(C\mid X)=\frac{P(X\mid C)P(C)}{P(X)}
 \]
 
-It assumes conditional independence of features given the class. It is computationally efficient and suitable for high-dimensional text features.
+It assumes conditional independence of features given the class.
 
-## 9.3 Algorithm Comparison
+It is computationally efficient and suitable for high-dimensional text classification.
+
+## 9.3 Model Comparison
 
 | Parameter | Logistic Regression | Naive Bayes |
 |---|---|---|
-| Learning type | Supervised | Supervised |
-| Approach | Discriminative | Probabilistic generative |
+| Learning | Supervised | Supervised |
+| Approach | Discriminative | Probabilistic |
 | Output | Class probability | Class probability |
-| Training cost | Relatively efficient | Very efficient |
+| Training | Efficient | Very efficient |
 | Class imbalance | Class weights applied | No class weighting applied |
-| Observed result | Higher accuracy and F1-score | Faster training |
+| Accuracy | 97.6% | 96.4% |
+| Spam F1-score | 0.897 | 0.853 |
 
 ---
 
-# 10. Implementation Details
+# 10. IMPLEMENTATION DETAILS
 
-The codebase is divided into modules to keep the application organised and testable.
+The application follows a modular structure.
 
-## 10.1 Data Ingestion Module
+| Module | File / Directory | Responsibility |
+|---|---|---|
+| Data Ingestion | `src/ingestion/loader.py` | Reads and validates datasets |
+| Kafka Producer | `kafka_producer.py` | Publishes incoming messages |
+| Preprocessing | `src/preprocessing/cleaner.py` | Text cleaning |
+| Features | `src/ml/features.py` | TF-IDF pipeline |
+| Training | `src/ml/trainer.py` | Model training |
+| Training Job | `src/ml/train_job.py` | Training execution |
+| Evaluation | `src/ml/evaluator.py` | Metric calculation |
+| Model Registry | `src/ml/model_registry.py` | Model versioning |
+| Streaming | `src/streaming/stream_predictor.py` | Real-time prediction |
+| Storage | `src/storage/` | HDFS and HBase clients |
+| Backend | `src/api/` | FastAPI services |
+| Frontend | `ui/` | Web dashboard |
 
-`src/ingestion/loader.py` reads the input CSV and validates its schema. `kafka_producer.py` publishes messages to Kafka for streaming tests.
+## Dashboard Modules
 
-## 10.2 Preprocessing Module
-
-`src/preprocessing/cleaner.py` implements the text-cleaning operations. The same function is used by the training and streaming pipelines.
-
-## 10.3 Machine Learning Module
-
-The `src/ml/` package contains:
-
-- `features.py` — feature construction.
-- `trainer.py` and `train_job.py` — model training.
-- `evaluator.py` — model evaluation.
-- `model_registry.py` — model versioning and persistence.
-
-The training entry point is `src/ml/trainer.py`, which delegates to `train_job.py`.
-
-## 10.4 Streaming Module
-
-`src/streaming/stream_predictor.py` reads from Kafka topic `emails-in` using Spark Structured Streaming, scores each micro-batch with the latest model, and writes results to HBase and Kafka.
-
-## 10.5 Storage Module
-
-`src/storage/` provides the HDFS and HBase clients.
-
-## 10.6 API Module
-
-`src/api/` contains the FastAPI application and routes for training, prediction, and status monitoring.
-
-## 10.7 Frontend Module
-
-The frontend in `ui/` uses HTML, CSS, and JavaScript. It provides six main tabs:
-
-| Dashboard Tab | Functionality |
+| Tab | Functionality |
 |---|---|
-| Dashboard | Counts and spam-probability histogram |
-| Train | Dataset path, algorithm selection, and cross-validation |
-| Predict | Classify a pasted message or send it to Kafka |
-| Live Stream | View recent prediction rows from HBase |
-| Metrics | Accuracy, precision, recall, F1, AUC, and confusion matrix |
-| Logs | View phase logs and filter by error code |
+| Dashboard | Classification counts and probability histogram |
+| Train | Dataset selection and algorithm configuration |
+| Predict | Individual message classification |
+| Live Stream | Recent HBase prediction records |
+| Metrics | Evaluation metrics and confusion matrix |
+| Logs | Phase logs and error information |
 
-The header also displays status indicators for the master, worker1, worker2, and the active model.
+The dashboard also displays the status of the master, worker1, worker2, and active model.
 
-## 10.8 Error Handling and Phase Tracking
+## Error Handling
 
-The application uses structured error codes in the form `SPM-<MODULE>-<NNN>`. Each error includes a message, probable cause, and hint.
+Structured errors follow this format:
 
-Every pipeline phase records:
+```text
+SPM-<MODULE>-<NNN>
+```
 
-- Start, success, or failure status.
-- Execution duration.
-- Associated error code.
+Each error includes a message, probable cause, and suggested hint.
 
-Events are written to the console, `logs/spam.log`, and the HBase `phase_log` table.
+Execution events are recorded in:
+
+- Console output.
+- `logs/spam.log`.
+- HBase `phase_log` table.
 
 ---
 
-# 11. Project Directory Structure
+# 11. PROJECT DIRECTORY STRUCTURE
 
 ```text
 spam-classifier/
@@ -719,6 +786,7 @@ spam-classifier/
 │   └── e2e/
 │
 ├── docs/
+│   ├── Spam_Classifier_Big_Data_Report.pdf
 │   ├── architecture.md
 │   ├── setup.md
 │   ├── api.md
@@ -732,13 +800,13 @@ spam-classifier/
 
 ---
 
-# 12. Installation and Cluster Setup
+# 12. INSTALLATION AND CLUSTER SETUP
 
 ## 12.1 Prerequisites
 
-For the distributed setup, prepare three Ubuntu 22.04 machines connected to the same network.
+Prepare three Ubuntu 22.04 machines connected through the same network.
 
-Install or configure:
+Required software:
 
 - Python 3.10+
 - Java 11
@@ -747,13 +815,13 @@ Install or configure:
 - Kafka 3.6.1
 - HBase 2.5.8
 
-Ensure that the same Linux username and project directory path are used on all nodes.
+Use the same Linux username and project directory path on all nodes.
 
-## 12.2 Configure the Nodes
+## 12.2 Node Configuration
 
-Configure static or otherwise stable network addresses and update `config/cluster.yaml` and `/etc/hosts` on all machines.
+Configure stable IP addresses and update `/etc/hosts` and `config/cluster.yaml`.
 
-Example only — replace these addresses with the actual addresses of your machines:
+Example addresses (replace with your actual network configuration):
 
 ```text
 192.168.1.10 master
@@ -761,7 +829,7 @@ Example only — replace these addresses with the actual addresses of your machi
 192.168.1.12 worker2
 ```
 
-Clone the repository on all three nodes using the same directory path:
+Clone the repository on all three machines:
 
 ```bash
 git clone <YOUR_REPOSITORY_URL> ~/spam-classifier
@@ -777,17 +845,13 @@ ssh-copy-id worker1
 ssh-copy-id worker2
 ```
 
-Ensure that the required ports are reachable between the machines. Apply firewall changes appropriate to your lab network and security requirements.
-
 ## 12.3 Install Hadoop
 
-Run the Hadoop setup script on each machine, using the appropriate node role:
-
 ```bash
-# On the master
+# Master
 ./cluster/setup_hadoop.sh master
 
-# On worker1 and worker2
+# Workers
 ./cluster/setup_hadoop.sh worker
 ```
 
@@ -808,58 +872,56 @@ Run on the master:
 ./cluster/setup_kafka.sh
 ```
 
-Reload the shell environment if required:
+Reload the shell environment:
 
 ```bash
 source ~/.bashrc
 ```
 
-## 12.6 Start and Verify the Cluster
-
-On the master:
+## 12.6 Start the Cluster
 
 ```bash
 ./cluster/start_all.sh
 ./cluster/health_check.sh
 ```
 
-The startup script is configured to start the services and prepare the required HDFS paths, Kafka topics, and HBase tables.
+The startup script prepares the required services, HDFS paths, Kafka topics, and HBase tables.
 
-Useful web interfaces:
+### Cluster Monitoring Interfaces
 
 | Service | Address |
 |---|---|
-| HDFS NameNode UI | `http://master:9870` |
-| YARN ResourceManager UI | `http://master:8088` |
-| HBase Master UI | `http://master:16010` |
+| HDFS NameNode | `http://master:9870` |
+| YARN ResourceManager | `http://master:8088` |
+| HBase Master | `http://master:16010` |
 
-## 12.7 Upload the Dataset
+## 12.7 Upload Dataset
 
 ```bash
 hdfs dfs -put data/sample/sms.csv /data/raw/
 ```
 
-Refer to [`docs/setup.md`](docs/setup.md) for the detailed setup sequence and troubleshooting guidance.
+For additional configuration and troubleshooting, refer to [`docs/setup.md`](docs/setup.md).
 
 ---
 
-# 13. Execution Guide
+# 13. EXECUTION GUIDE
 
-Run the following commands from the project directory on the master node after the required services have been configured.
+Run the commands from the project directory on the master node after configuring the required services.
 
-## 13.1 Train Logistic Regression
+### Train Logistic Regression
 
 ```bash
 spark-submit --master yarn src/ml/trainer.py --algo logreg
 ```
 
-## 13.2 Train Naive Bayes
+### Train Naive Bayes
 
 ```bash
 spark-submit --master yarn src/ml/trainer.py --algo nb
 ```
 
-## 13.3 Start the Streaming Pipeline
+### Start Real-Time Streaming
 
 ```bash
 spark-submit --master yarn \
@@ -867,33 +929,33 @@ spark-submit --master yarn \
   src/streaming/stream_predictor.py
 ```
 
-## 13.4 Publish Sample Messages to Kafka
+### Publish Sample Messages
 
 ```bash
 python -m src.ingestion.kafka_producer --rate 5 --limit 100
 ```
 
-## 13.5 Start the Backend and Dashboard
+### Start Backend and Dashboard
 
 ```bash
 uvicorn src.api.main:app --host 0.0.0.0 --port 8000
 ```
 
-Open the application at:
+Access the dashboard:
 
 ```text
 http://master:8000
 ```
 
-FastAPI interactive API documentation:
+FastAPI documentation:
 
 ```text
 http://master:8000/docs
 ```
 
-## 13.6 Local Development Without a Distributed Cluster
+### Local Development
 
-For single-machine development, the application can be started in local Spark mode:
+For single-machine testing without a distributed cluster:
 
 ```bash
 SPAM_SPARK_MASTER='local[*]' \
@@ -901,38 +963,38 @@ SPAM_ALLOW_MEMORY_STORE=1 \
 uvicorn src.api.main:app --host 0.0.0.0 --port 8000
 ```
 
-This mode is useful for local development and testing. It should not be confused with a multi-node distributed deployment.
+This mode is intended for local development and should not be confused with multi-node distributed execution.
 
 ---
 
-# 14. Application Features and Monitoring
+# 14. APPLICATION FEATURES AND MONITORING
 
-The web dashboard provides a unified view of the classification system.
+The web dashboard provides a central interface for training, prediction, streaming, and monitoring.
 
 | Feature | Description |
 |---|---|
-| Training control | Start model training and inspect the current run |
-| Prediction | Submit an individual message for classification |
-| Kafka ingestion | Send messages to the incoming Kafka topic |
-| Live stream | Inspect recent prediction records stored in HBase |
-| Metrics | View model evaluation metrics and confusion matrix |
-| Phase tracking | Inspect progress through P1–P7 |
-| Logs | Review execution events and coded errors |
-| Cluster indicators | View status indicators for master and worker nodes |
+| Training | Start training and inspect execution |
+| Prediction | Classify individual messages |
+| Kafka Ingestion | Send messages to Kafka |
+| Live Stream | Inspect recent HBase records |
+| Metrics | View classification performance |
+| Phase Tracking | Monitor P1–P7 |
+| Logs | Review execution and errors |
+| Cluster Status | Monitor master and worker indicators |
 
-## 14.1 Pipeline Execution Phases
+## Pipeline Status
 
 | Phase | Description |
 |---|---|
 | P1 — INGEST | Dataset ingestion |
-| P2 — CLEAN | Text preprocessing |
+| P2 — CLEAN | Text cleaning |
 | P3 — FEATURES | Feature extraction |
 | P4 — TRAIN | Model training |
 | P5 — EVALUATE | Model evaluation |
 | P6 — SAVE_MODEL | Model persistence |
 | P7 — STREAM | Real-time classification |
 
-## 14.2 Example Error Codes
+## Error Catalogue
 
 | Error Code | Description |
 |---|---|
@@ -947,39 +1009,44 @@ The web dashboard provides a unified view of the classification system.
 | `SPM-TRN-501` | Executor out of memory |
 | `SPM-STR-801` | Kafka offset error |
 
-The complete error catalogue is maintained in [`docs/errors.md`](docs/errors.md).
+See [`docs/errors.md`](docs/errors.md) for the complete error catalogue.
 
 ---
 
-# 15. API Reference
+# 15. API REFERENCE
 
-**Base path:** `/api/v1`
+**Base URL:** `/api/v1`
 
 | Method | Endpoint | Description |
-|---|---|---|
-| `POST` | `/train` | Start model training |
-| `GET` | `/train/result` | Retrieve training status and results |
-| `POST` | `/predict` | Classify an individual message |
-| `POST` | `/send` | Send an email/message to Kafka |
-| `GET` | `/status` | Retrieve pipeline and cluster status |
-| `GET` | `/metrics` | Retrieve model evaluation metrics |
-| `GET` | `/predictions` | Retrieve recent predictions |
-| `GET` | `/logs` | Retrieve execution logs |
-| `GET` | `/errors` | Retrieve the error-code catalogue |
+|:---:|---|---|
+| POST | `/train` | Start model training |
+| GET | `/train/result` | Retrieve training results |
+| POST | `/predict` | Classify an individual message |
+| POST | `/send` | Publish a message to Kafka |
+| GET | `/status` | Retrieve cluster and pipeline status |
+| GET | `/metrics` | Retrieve model metrics |
+| GET | `/predictions` | Retrieve recent predictions |
+| GET | `/logs` | Retrieve execution logs |
+| GET | `/errors` | Retrieve error information |
 
-For interactive request and response schemas, start the backend and visit `/docs`. Additional details are maintained in [`docs/api.md`](docs/api.md).
+For interactive request and response schemas:
+
+```text
+http://master:8000/docs
+```
+
+Additional documentation is available in [`docs/api.md`](docs/api.md).
 
 ---
 
-# 16. Results and Performance Analysis
+# 16. RESULTS AND PERFORMANCE ANALYSIS
 
-The reported experiment uses the UCI SMS Spam Collection dataset with an 80:20 train-test split.
+The reported experiments use the UCI SMS Spam Collection dataset with an 80:20 train-test split.
 
-**Number of test messages: 1,027**
+<details open>
+<summary><strong>Model Performance — Logistic Regression</strong></summary>
 
-## 16.1 Logistic Regression Results
-
-| Metric | Target | Achieved Result |
+| Metric | Target | Achieved |
 |---|---:|---:|
 | Accuracy | ≥ 95% | **97.6%** |
 | Precision (Spam) | — | **98.2%** |
@@ -987,75 +1054,84 @@ The reported experiment uses the UCI SMS Spam Collection dataset with an 80:20 t
 | Spam F1-score | ≥ 0.94 | **0.897** |
 | False-positive rate | < 2% | **0.22%** |
 
-## 16.2 Model Comparison
+</details>
+
+## 16.1 Model Comparison
 
 | Model | Accuracy | Spam F1-score |
 |---|---:|---:|
 | **Logistic Regression** | **97.6%** | **0.897** |
 | Naive Bayes | 96.4% | 0.853 |
 
-Logistic Regression achieved better accuracy and spam F1-score on the evaluated dataset and was selected as the primary model.
+Logistic Regression achieved better accuracy and spam F1-score and was selected as the primary model.
 
-## 16.3 Confusion Matrix
+## 16.2 Confusion Matrix
 
-The Logistic Regression confusion matrix contains:
+**Test messages: 1,027**
 
-| Actual / Predicted | Predicted Ham | Predicted Spam |
+| Actual / Predicted | Ham | Spam |
 |---|---:|---:|
-| **Actual Ham** | 893 | 2 |
-| **Actual Spam** | 23 | 109 |
+| Actual Ham | 893 | 2 |
+| Actual Spam | 23 | 109 |
 
-The reported metrics follow from these values:
+### Metric Calculations
 
 - Accuracy = (893 + 109) / 1,027 = **97.6%**
 - Precision = 109 / (109 + 2) = **98.2%**
 - Recall = 109 / (109 + 23) = **82.6%**
 
-The low false-positive count indicates that very few legitimate messages were incorrectly classified as spam. Recall is comparatively weaker, meaning some spam messages were classified as ham.
+The low false-positive count indicates that very few legitimate messages were incorrectly classified as spam. Recall is comparatively lower because some spam messages were classified as ham.
 
-## 16.4 Dashboard and Streaming Observations
+## 16.3 Streaming Observations
 
-The project report records the following application observations:
+The project report records the following observations:
 
-- The dashboard displayed **128 classified messages** after prediction and streaming tests.
-- The streaming job scored **127 messages across five micro-batches**.
-- Predictions were visible through the Live Stream interface using HBase records.
-- A sample legitimate meeting message was classified as Not Spam with a reported spam probability of 2.5%.
+| Observation | Result |
+|---|---:|
+| Dashboard classified messages | 128 |
+| Messages scored by streaming job | 127 |
+| Micro-batches processed | 5 |
+| Example legitimate-message spam probability | 2.5% |
 
-The 127-message streaming observation and the dashboard count of 128 are reported as observed values; they are not a latency or throughput benchmark.
+These are observed application values, not formal throughput or latency benchmarks.
 
-## 16.5 Test Results
+## 16.4 Testing Results
 
-- **27 tests passed locally**, as reported by the project test run.
-- Overall reported test coverage: **78%**.
-- Core ML, API, and common modules reached coverage in the 76–100% range.
-- The project target for unit-test coverage was 80%, so the reported 78% is slightly below target.
+| Metric | Result |
+|---|---:|
+| Tests passed locally | 27 |
+| Test coverage | 78% |
+| Coverage target | 80% |
 
-## 16.6 Interpretation
+Core ML, API, and common modules reached coverage in the reported 76–100% range.
 
-The TF-IDF and Logistic Regression pipeline separates spam from ham effectively on this dataset, with high precision and a very low false-positive rate. Recall is the weaker metric. The spam F1-score of 0.897 did not meet the original target of 0.94.
+## 16.5 Performance Interpretation
 
-The results should be interpreted in the context of a relatively small, imbalanced SMS dataset. SMS messages are generally shorter than emails, so performance on larger email datasets may differ.
+The Logistic Regression model provides high precision and a low false-positive rate on the evaluated dataset.
+
+However, the spam F1-score of 0.897 did not meet the original target of 0.94. The dataset is relatively small and imbalanced, and its SMS messages differ from longer email content.
+
+Consequently, larger datasets and additional benchmarking are required to establish generalisation and distributed performance.
 
 ---
 
-# 17. Testing and Verification
+# 17. TESTING AND VERIFICATION
 
-The project uses unit tests, API integration tests, and a distributed end-to-end smoke test.
+The project uses unit tests, API integration tests, and distributed end-to-end testing.
 
-## 17.1 Run the Test Suite
+### Run Unit Tests
 
 ```bash
 python -m pytest -q
 ```
 
-## 17.2 Run Tests with Coverage
+### Run Tests with Coverage
 
 ```bash
 python -m pytest -q --cov=src
 ```
 
-## 17.3 Run the End-to-End Smoke Test
+### Run End-to-End Smoke Test
 
 ```bash
 python tests/e2e/smoke.py http://master:8000
@@ -1063,65 +1139,61 @@ python tests/e2e/smoke.py http://master:8000
 
 The end-to-end test requires the distributed services and backend to be running.
 
-## 17.4 Verification Summary
+## Verification Summary
 
-The project report distinguishes automated local testing from observations made on the deployed environment.
-
-| Component | Reported Verification |
+| Component | Verification |
 |---|---|
-| Batch ML training | Automated tests; training runs completed in the deployed environment |
-| FastAPI backend | Automated tests; requests served on the deployed master |
+| Batch ML training | Automated tests and completed training runs |
+| FastAPI backend | Automated tests and deployed requests |
 | Web interface | Running and reachable |
-| Error handling and phase tracking | Automated tests; phase events visible in dashboard logs |
-| Kafka → Spark → HBase streaming | Observed working; micro-batches scored and predictions listed from HBase |
-| HBase persistence | Observed through Thrift connection and prediction rows |
-| HDFS and YARN | Configured and used by the pipeline; dedicated HDFS/YARN evidence was not included in the report |
+| Error handling | Automated tests and dashboard logs |
+| Kafka → Spark → HBase | Streaming and prediction records observed |
+| HBase persistence | Thrift connection and prediction rows observed |
+| HDFS and YARN | Configured and used; dedicated evidence not included in report |
 | Multi-worker speed-up | Not measured |
 | Streaming latency | Not measured |
 
-The report also records a local test coverage of 78%. Distributed integration and performance measurements should therefore be interpreted separately from the local automated test results.
+The reported 78% coverage refers to local automated testing. It should not be interpreted as complete distributed integration coverage.
 
 ---
 
-# 18. Limitations and Challenges
+# 18. LIMITATIONS AND CHALLENGES
 
 ## 18.1 Dataset Limitations
 
-The experiments use the UCI SMS Spam Collection. SMS messages are shorter than typical emails and may have different language patterns. The reported results may not directly generalise to longer email content.
+The UCI SMS Spam Collection contains short messages. Performance on longer email datasets may differ.
 
 ## 18.2 Model Performance
 
-The spam F1-score of 0.897 is below the target of 0.94. The comparatively lower recall of 82.6% indicates that some spam messages are missed.
-
-Potential areas for improvement include better feature engineering, threshold tuning, and evaluation on larger datasets.
+The spam F1-score of 0.897 is below the target of 0.94. Recall of 82.6% indicates that some spam messages remain undetected.
 
 ## 18.3 Performance Benchmarking
 
-Streaming latency and speed-up from additional workers have not been measured. A controlled benchmark would require repeated runs with different worker counts and workloads.
+Streaming latency and multi-worker speed-up have not been formally measured.
 
-Training time varied considerably across recorded runs (approximately 131–628 seconds). These observations come from a shared virtual environment and should not be treated as a formal performance benchmark.
+Training duration varied across recorded runs, approximately 131–628 seconds, in the shared virtual environment.
 
 ## 18.4 Test Coverage
 
-Overall coverage is 78%, slightly below the 80% target. Some Kafka, HDFS, and streaming paths require distributed services and are not covered by the local unit-test run.
+The reported coverage of 78% is slightly below the 80% target. Some distributed service paths require additional integration testing.
 
-## 18.5 Deployment Challenges Recorded
+## 18.5 Deployment Challenges
 
-The project report records the following issues encountered during deployment:
+The following issues were recorded during deployment:
 
-- **Preprocessing serialization issue (`SPM-PRE-301`):** An early CLEAN phase failed with a Python serialization/recursion error. Later runs completed successfully.
-- **HBase write issue (`SPM-STR-803`):** Initial HBase writes failed while the Thrift connection was not yet working. The issue stopped appearing after the connection was established.
-- **Run-to-run timing variation:** Training duration varied across runs on shared virtual machines.
+- **`SPM-PRE-301`:** An early CLEAN phase failed because of a Python serialization/recursion error. Later runs completed successfully.
+- **`SPM-STR-803`:** Initial HBase writes failed while the Thrift connection was unavailable. The issue stopped appearing after the connection was established.
+- **Training time variation:** Execution duration varied across runs on shared virtual machines.
 
-The structured error codes and phase logs helped identify the stage and likely cause of these problems.
+Structured error codes and phase tracking helped identify the affected pipeline stages.
 
 ---
 
-# 19. Applications and Future Scope
+# 19. APPLICATIONS AND FUTURE SCOPE
 
 ## 19.1 Applications
 
-The system's approach can be applied to:
+The proposed architecture can be extended to:
 
 1. Email spam filtering.
 2. SMS spam detection.
@@ -1131,38 +1203,42 @@ The system's approach can be applied to:
 6. Real-time content moderation.
 7. Distributed message analytics.
 
-## 19.2 Future Improvements
+## 19.2 Future Enhancements
 
-- Train and evaluate on larger datasets such as SpamAssassin and Enron email corpora.
-- Explore advanced classifiers and NLP techniques.
-- Tune the classification threshold to improve spam recall.
+- Train and evaluate on larger datasets such as SpamAssassin and Enron.
+- Explore advanced NLP models and classification algorithms.
+- Improve spam recall through threshold tuning.
 - Add ROC and Precision-Recall visualisations.
-- Measure real-time streaming latency.
-- Benchmark execution with different worker counts.
-- Test recovery when a worker or service fails during execution.
-- Expand unit and distributed integration test coverage.
-- Add richer dashboard monitoring and alerting.
+- Measure real-time processing latency.
+- Benchmark performance with different worker counts.
+- Test recovery from worker and service failures.
+- Improve automated test coverage.
+- Extend dashboard monitoring and alerting.
 
 ---
 
-# 20. Conclusion
+# 20. CONCLUSION
 
-The project demonstrates a distributed email spam classification application built using the Hadoop ecosystem. It combines Apache Hadoop, Apache Spark MLlib, Apache Kafka, Apache HBase, and FastAPI into an integrated architecture for batch machine learning and real-time message processing.
+This project demonstrates the development of a distributed spam classification application using the Hadoop ecosystem.
 
-The batch component performs text cleaning, TF-IDF feature extraction, model training, and evaluation using Logistic Regression and Naive Bayes. The real-time component uses Kafka for message ingestion and Spark Structured Streaming for continuous classification. Predictions are stored in HBase and made available through a web-based dashboard.
+The system integrates Apache Hadoop, Apache Spark MLlib, Apache Kafka, Apache HBase, and FastAPI to support batch machine learning and real-time message classification.
 
-On the evaluated UCI SMS Spam Collection test split, Logistic Regression achieved 97.6% accuracy, 98.2% precision, 82.6% recall, a spam F1-score of 0.897, and a false-positive rate of 0.22%. It outperformed Naive Bayes on the reported accuracy and F1-score. The spam F1 target of 0.94 was not reached, and streaming latency and multi-worker performance remain to be measured.
+The batch pipeline performs text preprocessing, TF-IDF feature extraction, model training, and evaluation. The streaming pipeline uses Kafka for message ingestion and Spark Structured Streaming for continuous classification. Predictions are stored in HBase and exposed through a monitoring dashboard.
 
-Overall, the project provided practical experience with distributed storage, resource management, parallel processing, machine learning, stream processing, NoSQL databases, API development, and monitoring. It demonstrates how these technologies can be integrated into a distributed classification application.
+On the evaluated UCI SMS Spam Collection test split, Logistic Regression achieved 97.6% accuracy, 98.2% precision, 82.6% recall, a spam F1-score of 0.897, and a false-positive rate of 0.22%.
+
+Although the model achieved strong accuracy, the spam F1-score remained below the original target of 0.94. Streaming latency and multi-worker performance also remain areas for further evaluation.
+
+Overall, the project provides practical experience with distributed storage, resource management, parallel computation, machine learning, stream processing, NoSQL databases, API development, and application monitoring.
 
 ---
 
-# 21. References
+# 21. REFERENCES
 
 1. [Apache Hadoop Documentation](https://hadoop.apache.org/docs/)
 2. [Apache Spark Documentation](https://spark.apache.org/docs/latest/)
 3. [Apache Spark MLlib Guide](https://spark.apache.org/docs/latest/ml-guide.html)
-4. [Spark Structured Streaming Programming Guide](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html)
+4. [Spark Structured Streaming](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html)
 5. [Apache Kafka Documentation](https://kafka.apache.org/documentation/)
 6. [Apache HBase Reference Guide](https://hbase.apache.org/book.html)
 7. [FastAPI Documentation](https://fastapi.tiangolo.com/)
@@ -1172,79 +1248,36 @@ Overall, the project provided practical experience with distributed storage, res
 
 ---
 
-## Project Documentation
+# PROJECT DOCUMENTATION
 
-The following supporting documents are maintained in the repository:
+Additional technical documentation is maintained in the `docs/` directory.
 
 | Document | Description |
 |---|---|
-| [`docs/setup.md`](docs/setup.md) | Detailed installation and cluster configuration |
-| [`docs/architecture.md`](docs/architecture.md) | Architecture and data flow |
-| [`docs/api.md`](docs/api.md) | API reference |
-| [`docs/errors.md`](docs/errors.md) | Error catalogue and troubleshooting |
-| [`docs/testing.md`](docs/testing.md) | Test cases and coverage |
-| [`docs/demo_commands.md`](docs/demo_commands.md) | Commands for project demonstration |
+| [Complete Project Report](docs/Spam_Classifier_Big_Data_Report.pdf) | 34-page academic project report |
+| [Setup Guide](docs/setup.md) | Installation and cluster configuration |
+| [Architecture](docs/architecture.md) | System architecture and data flow |
+| [API Documentation](docs/api.md) | API endpoints and usage |
+| [Error Catalogue](docs/errors.md) | Error codes and troubleshooting |
+| [Testing Guide](docs/testing.md) | Test cases and coverage |
+| [Demo Commands](docs/demo_commands.md) | Demonstration commands |
 
 ---
 
 <div align="center">
 
-**Distributed Email Spam Classification using Apache Spark MLlib**
+### DISTRIBUTED EMAIL SPAM CLASSIFICATION
 
-*Big Data Laboratory · Department of Computer Science and Engineering*  
-*National Institute of Technology Delhi · Academic Session 2026–2027*
+**Apache Hadoop · Apache Spark MLlib · Apache Kafka · Apache HBase**
 
+Department of Computer Science and Engineering
 
+**National Institute of Technology Delhi**
 
----
-
-# 📘 Complete Project Report
-
-<div align="center">
-
-### Go Beyond the README. Explore the Complete Report.
-
-**Distributed Email Spam Classification using Apache Spark MLlib**
-
-A detailed 34-page academic report covering the complete project journey, including system architecture, distributed cluster configuration, implementation, machine learning algorithms, deployment, experiments, and performance analysis.
+Academic Session 2026–2027
 
 <br/>
 
-[![Download PDF](https://img.shields.io/badge/⬇_DOWNLOAD_FULL_PROJECT_REPORT-Download%20PDF-2563EB?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](docs/Spam_Classifier_Big_Data_Report.pdf)
-
-<br/>
-
-| 📄 Report Information | Details |
-|:---|:---|
-| Document | Complete Project Report |
-| Format | PDF |
-| Pages | 34 |
-| Subject | Big Data |
-| Academic Session | 2026–2027 |
-| Institution | National Institute of Technology Delhi |
-
-<br/>
-
-### Inside the Report
-
-- Complete system architecture and workflow diagrams
-- Three-node distributed cluster architecture
-- Hadoop, Spark, Kafka and HBase implementation
-- Machine learning algorithms and mathematical explanations
-- Installation and execution procedures
-- Application screenshots and deployment
-- Model evaluation and performance analysis
-- Testing, limitations and future enhancements
-
-<br/>
-
-**One Project. Multiple Technologies. A Complete Distributed Machine Learning System.**
-
-<sub>Prepared by Team DataStream Innovators · NIT Delhi · CSE-2</sub>
-
-</div>
-
----
-
+*End of Project Documentation*
 
 </div>
