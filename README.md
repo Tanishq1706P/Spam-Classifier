@@ -1194,6 +1194,57 @@ The following supporting documents are maintained in the repository:
 *Big Data Laboratory · Department of Computer Science and Engineering*  
 *National Institute of Technology Delhi · Academic Session 2026–2027*
 
-**Submitted by DataStream Innovators**
+
+
+---
+
+# 📘 Complete Project Report
+
+<div align="center">
+
+### Go Beyond the README. Explore the Complete Report.
+
+**Distributed Email Spam Classification using Apache Spark MLlib**
+
+A detailed 34-page academic report covering the complete project journey, including system architecture, distributed cluster configuration, implementation, machine learning algorithms, deployment, experiments, and performance analysis.
+
+<br/>
+
+[![Download PDF](https://img.shields.io/badge/⬇_DOWNLOAD_FULL_PROJECT_REPORT-Download%20PDF-2563EB?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](docs/Spam_Classifier_Big_Data_Report.pdf)
+
+<br/>
+
+| 📄 Report Information | Details |
+|:---|:---|
+| Document | Complete Project Report |
+| Format | PDF |
+| Pages | 34 |
+| Subject | Big Data |
+| Academic Session | 2026–2027 |
+| Institution | National Institute of Technology Delhi |
+
+<br/>
+
+### Inside the Report
+
+- Complete system architecture and workflow diagrams
+- Three-node distributed cluster architecture
+- Hadoop, Spark, Kafka and HBase implementation
+- Machine learning algorithms and mathematical explanations
+- Installation and execution procedures
+- Application screenshots and deployment
+- Model evaluation and performance analysis
+- Testing, limitations and future enhancements
+
+<br/>
+
+**One Project. Multiple Technologies. A Complete Distributed Machine Learning System.**
+
+<sub>Prepared by Team DataStream Innovators · NIT Delhi · CSE-2</sub>
+
+</div>
+
+---
+
 
 </div>
